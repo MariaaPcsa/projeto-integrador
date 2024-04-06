@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+:root{
+    --primary-color: #29335c;
+    --light-primary: #3f4f8d;
+    --ligthest-color: #e9ebd5;
+    --secondary-color: #774936;
+    --light-secondary: #b97e64;
+    --border: 1px solid #ffffff1a;
+}
+
+head{
+    margin-top: 20px 8px;
+    border: 0;
+   display: flex;
+   width: 50%;
+   background-color:#91918c44;
+   color: black;
+}
+header{
+   margin-top: 20px auto;
+   
+}
+main{ 
+height: 50000px;
+color: black;
+}
+
+
+h1{
+    top: 20rem;
+    margin: 30px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 500%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    color:#3f4f8d
+     
+
+}
+img{
+    top: 0;
+    justify-content: flex-end;
+    margin: 20px 10px 20px 10px;
+    align-items: center;
+    left: 10px;
+    width: 20%;
+    height: 25%;
+    
+}
+h2 {
+  margin: 30px;
+    color:#3f4f8d
+}
+#taskInput {
+   
+        margin-top: 10px;
+        padding: 8px 12px;
+        color: black;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        font: 50%;
+        font: status-bar 60%;
+      }
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: #0056b3;
+  }
+  button:focus{
+    outline: none;
+  }
+ 
+/* tabela*/
+  
+  body, table, input, button {
+    font: 300 16px/140% 'Roboto', sans-serif;
+    
+  }
+  
+  body {
+    background-color: #fff;
+    color: black;
+
+  }
+  
+  .container {
+    
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 32px;
+    float: left;
+  margin-right: 20px
+    
+  }
+  
+  header {
+    padding: 20px 0;
+  }
+  
+  form {
+    border: var(--border);
+    border-inline: none;
+    padding: 20px 0;
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  fieldset > div {
+    display: flex;
+    gap: 12px;
+    color: black;
+  }
+  
+  .input-wrapper {
+    flex: 1;
+  
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: black;
+    border: var(--border);
+    padding: 12px 12px;
+    outline: none;
+    font: 300pxS 14px/150% 'Roboto', sans-serif;
+    padding: 10px; /* Adiciona 10 pixels de preenchimento em todos os lados do elemento de entrada */
+    background-color: #f0f0f0a1; 
+  }
+  
+  input {
+    all: unset;
+  
+  }
+  
+  fieldset legend, section h2 {
+    font: 700 16px/140% 'Roboto', sans-serif;
+    color: black;
+    padding-bottom: 16px;
+  }
+  
+  fieldset button {
+    width: fit-content;
+    border: 0;
+    background: #F48F56;
+    border-radius: 10px;
+    padding: 7px 20px;
+    color: black;
+  
+    font: 700 12px/24px 'Roboto', sans-serif;
+    color: #00292E;
+  }
+  
+  fieldset button:hover {
+    background: #f37c37;
+  }
+  
+  .lista-participantes {
+    padding: 20px 0;
+    color: black;
+  }
+  
+  .lista-participantes > div {
+    border: var(--border);
+    border-radius: 8px;
+    color: black;
+  }
+  
+  table {
+    border-collapse: collapse;
+    color: black;
+  }
+  
+  table thead {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  
+  thead th,
+  tbody td {
+    padding: 12px 16px;
+
+    color: black;
+  }
+  
+  tbody td {
+    border-top: var(--border);
+    font-size: 13px;
+    line-height: 15px;
+    color: #c4c4cc;
+  }
+  
+  tbody td strong {
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+  }
+  
+  tbody td small {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
+  tbody td button {
+    all: unset;
+    color: black;
+  }
+  
+  tbody td button:hover {
+    text-decoration: underline;
+    color: black;
+  }
+  
