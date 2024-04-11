@@ -34,7 +34,8 @@ body {
   height: 100dvh 
 }
 main{ 
-height: 50000px;
+  /*barra de rolagem*/ 
+height: auto;
 color: black;
 /*height: 100dvh  adpitar a formação */ 
 
