@@ -22,3 +22,4 @@ function addTask() {
     alert("Por favor, insira uma tarefa.");
   }
 }
+<button onclick="window.location.href='URL_DE_DESTINO';">Efetuar Cadastro</button>

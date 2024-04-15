@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 20px;
     color: #333;
+    min-height: 100dvh;
 }
 
 /* Título da página */
