@@ -29,6 +29,7 @@ form {
 }
 
 /* Ajustes de layout para os rótulos e campos de entrada */
+
 label {
     display: block;
     margin: 10px 0 5px;
@@ -36,9 +37,11 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="password"],
+input[type="senha"],
+input[type="confirmarSenha"],
 input[type="date"],
 input[type="endereco"],
+
 select {
     width: 100%;
     padding: 10px;
@@ -86,5 +89,30 @@ input[type="password"]:focus,
 input[type="date"]:focus,
 input[type="endereco"]:focus,
 select:focus {
-    border-color: #4A90E2;
+    border-color: #4cae4c;
 }
+#container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  button {
+    margin: 20px auto;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #4cae4c;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    
+  }
+  

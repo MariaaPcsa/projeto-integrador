@@ -7,7 +7,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="from style.css">
    
-
+    <style> 
+    
+    .form-gruopo
+        {
+           margin-bottom: 30px;
+           margin: 20px;
+        }
+        .error-message{
+            color: red;
+            font-size: 12px;
+            display: none; /*inicialmente esta oculta*/
+            
+}
+    </style>
     
 </head>
 <body>
@@ -15,59 +28,101 @@
     
     <div class="form-container">
         <form id="cadastro-form" class="hidden">
+            
+            <div class="form-grupo">    
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
+            <input type="text" id="nome" name="nome"  required>
+            <span class="error-message"> Campo obrigatório</span>
+            </div>
+            
+            <div class="form-grupo"> 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            
+            <span class="error-message"> Campo obrigatório</span>
+            </div>
+            <div class="form-grupo"> 
             <label for="nome">ID:</label>
-            <input type="text" id="nome" name="nome ID" required>
+            <input type="text" id="nome" name="nome ID"required>
             
-            <label for=" senha">Senha</label>
-            <input type="password" name="senha" id="senha" required>
+            </div>
 
+            <div class="form-grupo"> 
+            <label for=" senha">Senha</label>
+            <input type="senha" name="senha" id="senha"class="obrigatoria">
+            <span class="error-message"> Campo obrigatório</span>
+            </div>
+
+            <div class="form-grupo">
+            <label for="senha">Confirmar Senha:</label>
+            <input type="confirmarSenha" id="confirmarSenha" name="confirmarSenha" class="obrigatoria">
+            <span class="error-message"> Campo obrigatório</span>
+            </div>
+            
+
+
+            <div class="form-grupo">
             <label for="cpf">CPF:</label>
             <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
-            
+            <span class="error-message"> Campo obrigatório</span>
+            </div>
+
+            <div class="form-grupo">
             <label for="CRM">CRM</label>
             <input type="text" name="CRM" id="CRM">
+            </div>
 
+            <div class="form-grupo">
             <label for="telefone">Telefone:</label>
             <input type="text" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
-
+            </div>
+            
+            <div class="form-grupo">
             <label for="data_nascimento">Data de Nascimento:</label>
-            <input type="date" id="data_nascimento" name="data_nascimento" required>
+            <input type="date" id="data_nascimento" name="data_nascimento"required>
+            </div>
 
+            <div class="form-grupo">
             <label for="endereco">Endereço:</label> 
             <input type="endereco" name="endereco" id="endereco" required>
-        
             
-            <label for="selecione">Selecione:</label>
+            </div>  
+            <div class="form-grupo">
+            <label for="selecione"> É obrigatório selecionar o usuario:</label>
             <select name="GrupoSelect" id="selecione">
-                <option value="Opcao1">Selecione o tipo de usuario</option>
+                <option value="Opcao1">Selecione o tipo de usuario</option required>
                 <option value="Opcao1">Paciente</option>
                 <option value="Opcao2">Psicólogo</option>
                 <option value="Opcao3">Psiquiatra</option>
-            </select><br><br>
+              
+            </select>
+            </div>
+            <br><br>
+            <div class="form-grupo">
             <label for="checkbox">Confirmar Cadastro</label>
-            <input type="checkbox" name="" id="checkbox">
+            <input type="checkbox" name="" id="checkbox" required>
+            </div>
 
-
+            <label for="checkbox">Concordo com termos de usa de dados </label>
+            <input type="checkbox" name="" id="checkbox" required>
             <input type="submit" value="Enviar">
-            <script src="from style.css"></script>
+           
             
         </form>
+        <form action=" lista"></form>
         <div id="container">
             <br>
-            <p>Adicione aqui o seu comentário de apoio, as pessoas que estão passando por problemas emocionais, devido a eventos com o trabalho. </p>
+            <p>Use este espaço caso queira deixar uma mensagem de conforto, para as pessoas que estão passando <br> por problemas Psicológicos, pois caso ele seja selecionada irá aparecer na página Home.</p>
             <br>
+            <label for="checkbox" required>Concordo que as minha mensagem seja exibita nesta página</label>
+        <input type="checkbox" name="" id="checkbox">
             <input type="text" id="taskInput" placeholder="Digite seu comentário" />
             <button onclick="addTask()" id="Click1">Adicionar</button>
             <ul id="taskList"></ul>
-          </div>
-          <label for="checkbox">Concordo com termos de usa de dados </label>
-        <input type="checkbox" name="" id="checkbox">
+            <button onclick="enviarMensagem()" id="Click1">Enviar dados</button>
+            
+        </div>
+    </form>
+        
     </div> 
     <script src="scrips.js"></script>
 </body>
