@@ -1,0 +1,73 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 100dvh;
+  }
+  
+  header {
+    background-color: #005f73;
+    color:#fff; 
+    padding: 5px 10px;
+    text-align: left;
+  }
+  a.botao1{
+    margin: 10px;
+    font-family: 200px;
+    margin-bottom: 10px;
+    font-size: small;
+    color:#fff; 
+  
+   
+  }
+  
+  img {
+    
+   
+   
+    width: 35px;
+  
+  }
+  #saudacao{
+     color:#fff; 
+  
+  }
+  main {
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  p, ul, li, input, select, button {
+    font-size: 16px;
+  }
+  
+  a {
+    color: #007BFF;
+    text-decoration: none; /* Remove sublinhado */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  }
+  .button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .button-link:hover {
+    background-color: #0056b3;
+  }
