@@ -130,6 +130,7 @@ document.getElementById('data_nascimento').addEventListener('change', function()
 });
 
 
+
 const input = document.getElementById("taskInput");
 const ul = document.getElementById("taskList");
 const forme = document.getElementById("cadastro-form")

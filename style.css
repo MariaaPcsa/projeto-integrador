@@ -14,12 +14,24 @@ header {
   background-color: #005f73;
   color:#fff; 
   padding: 5px 10px;
-  text-align: center;
+  text-align: left;
+}
+a.botao1{
+  margin: 10px;
+  font-family: 200px;
+  margin-bottom: 10px;
+  font-size: small;
+  color:#fff; 
+
+ 
 }
 
 img {
-  height: 350px ; /* Define um tamanho fixo para a imagem no cabeçalho */
-  vertical-align: middle;
+  
+ 
+ 
+  width: 35px;
+
 }
 #saudacao{
    color:#fff; 
