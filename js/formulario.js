@@ -5,33 +5,31 @@ document.addEventListener("DOMContentLoaded", function(){
   formulario.addEventListener("submit", function (envet){
 
     resetarMensagensDeErro()
+  
     
      if (!validarIdade())
      envet.preventDefault();
-     alert("Você deve ter pelo menos 18 anos")
+   alert("Validar campos, ser todos dos campos estiverem validos, o formulario será enviado")
 
   
       if (!validarCamposObrigatorios()){
-          envet.preventDefault(); // impede a submissão do formulário se houver erro!
-          
-          if(! validarCPF())
-          envet.preventDefault();
-          alert("CPF inválido")
+          envet.preventDefault(); 
       }
       if (!compararValores()){
           envet.preventDefault();
           alert("Este campo é obrigatório")
+
+         
       }
+      
   });
 function validarCamposObrigatorios () {
-          //selecionando todas o elementos obrigatorio atravez do querySelectorAll
           let camposObrigatorios = document.querySelectorAll(".obrigatorio")
          
           let camposValidos = true;
         
        for( let i = 0; camposObrigatorios.length > i; i++){
           let campo = camposObrigatorios [i]
-          // verificando os valores se esta  vazio ou nulo
           if (campo.value === "" || campo.value === null){
               exiberiErro(campo, "Este campo é obrigatório");
       
@@ -51,11 +49,10 @@ function validarCamposObrigatorios () {
           return true;
       }
 
-function exiberiErro(elemento, mensagem){
-  //selecionado o elemento pelo pai 
+function exiberiErro(elemento, mensagem){ 
   let mensagemErro = elemento.parentElement.querySelector(".error-message");
   mensagemErro.textContent = mensagem;
-  mensagemErro.style.display = "inline-block";///exibir a mesagem de error 
+  mensagemErro.style.display = "inline-block";
 
 }
 function resetarMensagensDeErro(){
@@ -68,36 +65,6 @@ function resetarMensagensDeErro(){
 
 });
 
-function validarCPF(cpf) {
-  cpf = cpf.replace(/[^\d]/g, ''); // Remove todos os caracteres não numéricos
-  if (cpf.length !== 11 || /^(.)\1+$/.test(cpf)) return false; // Verifica se todos os dígitos são iguais
-  let soma = 0;
-  for (let i = 0; i < 9; i++) {
-    soma += parseInt(cpf.charAt(i)) * (10 - i);
-  }
-  let resto = soma % 11;
-  let digito1 = resto < 2 ? 0 : 11 - resto;
-
-  soma = 0;
-  for (let i = 0; i < 10; i++) {
-    soma += parseInt(cpf.charAt(i)) * (11 - i);
-  }
-  resto = soma % 11;
-  let digito2 = resto < 2 ? 0 : 11 - resto;
-
-  return (parseInt(cpf.charAt(9)) === digito1 && parseInt(cpf.charAt(10)) === digito2);
-}
-
-document.getElementById('cpf').addEventListener('input', function() {
-  const cpfInput = this.value;
-  const cpfError = document.getElementById('cpf-error');
-  
-  if (validarCPF(cpfInput)) {
-    cpfError.textContent = '';
-  } else {
-    cpfError.textContent = 'CPF inválido';
-  }
-});
 
 function validarIdade() {
   const dataNascimento = new Date(document.getElementById('data_nascimento').value);
@@ -131,29 +98,5 @@ document.getElementById('data_nascimento').addEventListener('change', function()
 
 
 
-const input = document.getElementById("taskInput");
-const ul = document.getElementById("taskList");
-const forme = document.getElementById("cadastro-form")
-function addTask() {
-  if (input.value !== "") {
-    const li = document.createElement("li");
-    li.textContent = input.value;
 
-    //Adiciona um botão para remover a tarefa
-    const removerBotao = document.createElement("button");
-    removerBotao.textContent = "Remover";
-    removerBotao.onclick = function () {
-      ul.removeChild(li);
-    };
 
-    li.appendChild(removerBotao);
-    ul.appendChild(li);
-
-    input.value = "";
-  } else {
-    alert("Por favor, insira uma tarefa.");
-  }
-}
-function enviarMensagem() {
-  alert("Dados enviados!");
-}

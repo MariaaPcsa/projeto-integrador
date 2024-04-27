@@ -66,13 +66,13 @@
             
             <div class="form-grupo"> 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required itemid="Campo obrigatório">
             <span class="error-message"> Campo obrigatório</span>
             </div>
         
 
             <div class="form-grupo"> 
-            <label for=" senha">Senha</label>
+            <label for=" senha">Senha:</label>
             <input type="senha" name="senha" id="senha"class="obrigatoria">
             <span class="error-message"> Campo obrigatório</span>
             </div>
@@ -109,22 +109,9 @@
            
             
         </form>
-        <form action=" lista"></form>
-        <div id="container">
-            <br>
-            <p>Use este espaço caso queira deixar uma mensagem de conforto, para as pessoas que estão passando <br> por problemas Psicológicos, pois caso ele seja selecionada irá aparecer na página Home.</p>
-            <br>
-            <label for="checkbox" required>Concordo que as minha mensagem seja exibita nesta página</label>
-        <input type="checkbox" name="" id="checkbox">
-            <input type="text" id="taskInput" placeholder="Digite seu comentário" />
-            <button onclick="addTask()" id="Click1">Adicionar</button>
-            <ul id="taskList"></ul>
-            <button onclick="enviarMensagem()" id="Click1">Enviar dados</button>
-            
-        </div>
-    </form>
+        
         
     </div> 
-    <script src="/js/scrips.js"></script>
+    <script src="../js/formulario.js"></script>
 </body>
 </html>
