@@ -17,6 +17,24 @@ header {
   text-align: left;
   
 }
+#login{
+  
+  text-align: right;
+  font-family: 200px;
+  margin-bottom: 10px;
+  font-size: small;
+  color:#fff; 
+
+}
+#alertaLogin{
+  display: inline-block;
+  margin: 10px;
+  font-family: 200px;
+  margin-bottom: 10px;
+  font-size: small;
+  color:#fff; 
+
+}
 a.botao1{
   margin: 10px;
   font-family: 200px;
@@ -72,4 +90,90 @@ a:hover {
 
 .button-link:hover {
   background-color: #0056b3;
+}
+
+carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    background: transparent;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Cor do ícone */
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    color: white; /* Cor do ícone */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Cor de fundo ao passar o mouse */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin-top: -25px; /* Ajuste para centralizar os controles verticalmente */
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo da legenda */
+    color: white; /* Cor do texto da legenda */
+    text-align: center;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 1; /* Garante que os controles fiquem sobrepostos às imagens */
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+#carrocel{
+  width: 200px;
+  height: auto;
+  margin-bottom: 30px;
+  /* Aumenta o espaçamento abaixo da imagem */
+  transition: transform 0.3s;
+  border-radius: 10%;
+}
+.copyright{
+
+  color:black; 
+  padding: 5px 10px;
+  text-align: center;
+  line-height: 1.6;
+  
+  
 }
