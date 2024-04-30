@@ -96,10 +96,13 @@ a:hover {
 
 .copyright{
 
-  color:black; 
-  padding: 5px 10px;
+  color: white;
+  background-color:#005f73;
+  padding: 8px;
   text-align: center;
   line-height: 1.6;
-  
-  
+  margin-top: auto;
+  padding: 10px;
+
+
 }
