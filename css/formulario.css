@@ -274,12 +274,21 @@ a:hover {
   background-color: #0056b3;
 }
 
+.copyright{
 
+  color: white;
+  background-color:#005f73;
+  padding: 8px;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: auto;
+  padding: 10px;
+
+
+}
 
 
   
   
-
-/**/
 
 
