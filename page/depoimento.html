@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentaltech</title>
-    <link rel="stylesheet" href="/css/formulario.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="stylesheet" href="../css/style.css">
    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -25,15 +25,16 @@
 <body>
 
        
-        <header><h1 id="saudacao">Mentaltech
+        <header><h1 id="saudacao">            
+            <img id="logo" 
+            src="../image/logo.png" 
+            alt="Imagem de uma açao de levantar uma pessao caida no chão:">
             
-            <img src="/image/Imagem do WhatsApp de 2024-03-19 à(s) 21.18.44_e0a98f4e.jpg" 
-                alt="Imagem de uma açao de levantar uma pessao caida no chão:">
-            
-            <a href="/index.html" class="botao1">Home</a>
-            <a href="/page/quemsomos.html" class="botao1">Quem somos</a>
-            <a href="/page/depoimento.html" class="botao1">Depoimentos</a>
-            <a href="/page/formulario.html" class="botao1">Cadastro</a>
+           
+            <a href="../index.html" class="botao1">Home</a>
+            <a href="../page/quemsomos.html" class="botao1">Quem somos</a>
+            <a href="../page/depoimento.html" class="botao1">Depoimentos</a>
+            <a href="../page/formulario.html" class="botao1">Cadastro</a>
            
         
         </h1> </header>
@@ -41,20 +42,21 @@
         <form action=" lista"></form>
         <div id="container">
             <br>
-            <p>Use este espaço caso queira deixar uma mensagem de conforto, para as pessoas que estão passando <br> por problemas Psicológicos, pois caso ele seja selecionada irá aparecer na página Home.</p>
+            <p>Utilize este espaço caso queira deixar uma mensagem de conforto para as pessoas que estão passando por problemas psicológicos. Esta mensagem poderá ser selecionada para aparecer na página inicial.</p>
             <br>
-            <label for="checkbox" required>Concordo que as minha mensagem seja exibita nesta página</label>
+            <label for="checkbox" required>Concordo que as minha mensagem seja exibida nesta página</label>
         <input type="checkbox" name="" id="checkbox">
             <input type="text" id="taskInput" placeholder="Digite seu comentário" />
             <button onclick="addTask()" id="Click1">Adicionar</button>
             <ul id="taskList"></ul>
-            <button onclick="enviarMensagem()" id="Click1">Enviar dados</button>
+            <button onclick="enviarMensagem()" id="Click1">Enviar comentário</button>
             
         </div>
     </form>
         
     </div> 
     <script src="/js/depoimento.js"></script>
+    
     <footer class="copyright">
         <p>Copyright Mentaltech  © 2024 | Todos os direitos reservados</p>
         </footer>
