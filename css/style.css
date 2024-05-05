@@ -61,12 +61,15 @@ body {
   width: 800px;
   height: 400px;
   overflow: hidden;
+  
 }
+
 
 .slides {
   width: 400%;
   height: 400px;
   display: flex;
+  
 }
 
 .slides input {
@@ -80,8 +83,9 @@ body {
 }
 
 .slide img {
-  width: 800px;
-}
+	width: 800px;
+	border-radius: 10px; /* Adjust the value as needed */
+  }
 
 .manual-navigation {
   position: absolute;
