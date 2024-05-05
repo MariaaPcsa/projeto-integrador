@@ -1,124 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentaltech</title>
+    <link rel="stylesheet" href="../css/style.css" />
 
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/formulario.css">
-    
-   
-   
-    <style> 
-    
-    .form-gruopo
-        {
-           margin-bottom: 30px;
-           margin: 20px;
-        }
-        .error-message{
-            color: red;
-            font-size: 12px;
-            display: none; /*inicialmente esta oculta*/
-            
-}
-    </style>
-    
-</head>
-<header><h1 id="saudacao">           
-     
-    <img id="logo" 
-    src="../image/logo.png" 
-    alt="Imagem de uma açao de levantar uma pessao caida no chão:">
-    
-    <a href="../index.html" class="botao1">Home</a>
-    <a href="../page/quemsomos.html" class="botao1">Quem somos</a>
-    <a href="../page/depoimento.html" class="botao1">Depoimentos</a>
-    <a href="../page/formulario.html" class="botao1">Cadastro</a>
-       
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
 
-</h1> </header>
-<body>
-    <h3 >Efetuar Cadastro</h3>
-    
-    <div class="form-container">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
+    <script>
+      dayjs.extend(window.dayjs_plugin_relativeTime);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+    <script>
+      dayjs.locale("pt-br");
+    </script>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/formulario.js"></script>
+  </head>
+
+  <body id="iau9">
+    <div id="i6po" class="grid-row">
+      <div id="itjq" class="grid-column">
+        <div id="iyd2" class="grid-row">
+          <div id="iqjl" class="grid-column">
+            <a id="iucmr" href="../index.html" class="link-box">
+              <div data-type-icon id="irfl3k">
+                <img class="icon-logo" src="../image/logo.png" />
+              </div>
+            </a>
+          </div>
+
+          <div id="iffs" class="grid-column">
+            <div id="it00l" class="grid-row">
+              <div id="irtfd" class="grid-column">
+                <a id="icfyb" href="../page/quemsomos.html" class="link"
+                  >Quem somos</a
+                >
+                <a href="../page/depoimento.html" id="infmy1" class="link"
+                  >Depoimentos</a
+                >
+              </div>
+              <div id="icyzp" class="grid-column">
+                <a id="i88iz" href="../page/formulario.html" class="link"
+                  >Cadastro</a
+                >
+              </div>
+              <div id="icyzp" class="grid-column">
+                <form action="processar_login.php" method="post" id="login">
+                  <h2 id="alertaLogin">Login</h2>
+                  <img id="userpassicon" src="../image/user.png">
+                  <input type="text" id="username" name="username" required>
+                  <img id="userpassicon" src="../image/key.png">
+                  <input type="password" id="password" name="password" required>
+                  <input type="submit" value="Entrar">
+              </form>
+            </div>
+            </div>
+          </div>
+          <div id="id7x" class="grid-column"></div>
+          <!-- Futuramente substituir por login-->
+        </div>
+      </div>
+    </div>
+
+    <div id="irz7b" class="grid-row">
+      <div id="iycz3" class="grid-column">
+        <h1 id="irjua" class="header1">
+          Cadastro
+        </h1>
+        
         <form id="cadastro-form" class="hidden">
 
+          <div class="form-grupo">
+              <label for="selecione">Selecione o tipo de usuario</label>
+              <select name="GrupoSelect" id="selecione">
+                  <option value="Opcao1"></option>
+                  <option value="Opcao1">Paciente</option>
+                  <option value="Opcao2">Psicólogo</option>
+                  <option value="Opcao3">Psiquiatra</option>
+                
+              </select>
+              </div>
+          
+          <div class="form-grupo">    
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome"  required>
+          <span class="error-message"> Campo obrigatório</span>
+          </div>
+          <div class="form-grupo">    
+              <label for="sobrenome">Sobrenome:</label>
+              <input type="text" id="sobrenome" name="sobrenome"  required>
+              <span class="error-message"> Campo obrigatório</span>
+              </div>
+          
+          <div class="form-grupo"> 
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required itemid="Campo obrigatório">
+          <span class="error-message"> Campo obrigatório</span>
+          </div>
+      
+
+          <div class="form-grupo"> 
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" class="obrigatoria">
+            <span class="error-message">Campo obrigatório</span>
+            </div>
             <div class="form-grupo">
-                <label for="selecione">Selecione o tipo de usuario</label>
-                <select name="GrupoSelect" id="selecione">
-                    <option value="Opcao1"></option>
-                    <option value="Opcao1">Paciente</option>
-                    <option value="Opcao2">Psicólogo</option>
-                    <option value="Opcao3">Psiquiatra</option>
-                  
-                </select>
-                </div>
-            
-            <div class="form-grupo">    
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome"  required>
-            <span class="error-message"> Campo obrigatório</span>
-            </div>
-            <div class="form-grupo">    
-                <label for="sobrenome">Sobrenome:</label>
-                <input type="text" id="sobrenome" name="sobrenome"  required>
-                <span class="error-message"> Campo obrigatório</span>
-                </div>
-            
-            <div class="form-grupo"> 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required itemid="Campo obrigatório">
-            <span class="error-message"> Campo obrigatório</span>
-            </div>
-        
-
-            <div class="form-grupo"> 
-            <label for=" senha">Senha:</label>
-            <input type="senha" name="senha" id="senha"class="obrigatoria">
-            <span class="error-message"> Campo obrigatório</span>
-            </div>
-
-            <div class="form-grupo">
-            <label for="senha">Confirmar Senha:</label>
-            <input type="confirmarSenha" id="confirmarSenha" name="confirmarSenha" class="obrigatoria">
-            <span class="error-message"> Campo obrigatório</span>
-            </div>
+              <label for="confirmarSenha">Confirmar Senha:</label>
+              <input type="password" id="confirmarSenha" name="confirmarSenha" class="obrigatoria">
+              <span class="error-message">Campo obrigatório</span>
+              </div>
 
 
 
-            <div class="form-grupo">
-            <label for="telefone">Telefone:</label>
-            <input type="text" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
-            </div>
-            
-            <div class="form-grupo">
-            <label for="data_nascimento">Data de Nascimento:</label>
-            <input type="date" id="data_nascimento" name="data_nascimento"required>
-            <span class="error-message"> Campo obrigatório</span>
-           </div>
+          <div class="form-grupo">
+          <label for="telefone">Telefone:</label>
+          <input type="text" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+          </div>
+          
+          <div class="form-grupo">
+          <label for="data_nascimento">Data de Nascimento:</label>
+          <input type="date" id="data_nascimento" name="data_nascimento"required>
+          <span class="error-message"> Campo obrigatório</span>
+         </div>
 
-            
-            <br><br>
-            <div class="form-grupo">
-            <label for="checkbox">Confirmar Cadastro</label>
-            <input type="checkbox" name="" id="checkbox" required>
-            </div>
+          
+          <br><br>
+          
 
-            <label for="checkbox">Concordo com termos de usa de dados </label>
-            <input type="checkbox" name="" id="checkbox" required>
-            <input type="submit" value="Enviar">
-           
-            
-        </form>
-        
-        
-    </div> 
-    <script src="/js/formulario.js"></script>
-    
-    <footer class="copyright">
-        <p>Copyright Mentaltech  © 2024 | Todos os direitos reservados</p>
-        </footer>
-</body>
+          <label for="checkbox">Concordo com termos de uso de dados </label>
+          <input type="checkbox" name="" id="checkbox" required>
+          <input type="submit" value="Enviar">
+         
+          
+      </form>
+  
+      </div>
+    </div>
+
+
+   
+
+        <div id="copy1" class="text-blue">Copyright © 2024 Mentaltech</div>
+      </div>
+    </div>
+  </body>
 </html>

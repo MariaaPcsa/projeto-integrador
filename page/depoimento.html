@@ -1,63 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mentaltech</title>
-    <link rel="stylesheet" href="../css/formulario.css">
-    <link rel="stylesheet" href="../css/style.css">
-   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
 
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
     <script>
-      dayjs.extend(window.dayjs_plugin_relativeTime)
+      dayjs.extend(window.dayjs_plugin_relativeTime);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
     <script>
-      dayjs.locale('pt-br')
+      dayjs.locale("pt-br");
     </script>
+    
+  </head>
 
-</head>
-<body>
+  <body id="iau9">
+    <div id="i6po" class="grid-row">
+      <div id="itjq" class="grid-column">
+        <div id="iyd2" class="grid-row">
+          <div id="iqjl" class="grid-column">
+            <a id="iucmr" href="../index.html" class="link-box">
+              <div data-type-icon id="irfl3k">
+                <img class="icon-logo" src="../image/logo.png" />
+              </div>
+            </a>
+          </div>
 
-       
-        <header><h1 id="saudacao">            
-            <img id="logo" 
-            src="../image/logo.png" 
-            alt="Imagem de uma açao de levantar uma pessao caida no chão:">
-            
-           
-            <a href="../index.html" class="botao1">Home</a>
-            <a href="../page/quemsomos.html" class="botao1">Quem somos</a>
-            <a href="../page/depoimento.html" class="botao1">Depoimentos</a>
-            <a href="../page/formulario.html" class="botao1">Cadastro</a>
-           
+          <div id="iffs" class="grid-column">
+            <div id="it00l" class="grid-row">
+              <div id="irtfd" class="grid-column">
+                <a id="icfyb" href="../page/quemsomos.html" class="link"
+                  >Quem somos</a
+                >
+                <a href="../page/depoimento.html" id="infmy1" class="link"
+                  >Depoimentos</a
+                >
+              </div>
+              <div id="icyzp" class="grid-column">
+                <a id="i88iz" href="../page/formulario.html" class="link"
+                  >Cadastro</a
+                >
+              </div>
+              <div id="icyzp" class="grid-column">
+                <form action="processar_login.php" method="post" id="login">
+                  <h2 id="alertaLogin">Login</h2>
+                  <img id="userpassicon" src="../image/user.png">
+                  <input type="text" id="username" name="username" required>
+                  <img id="userpassicon" src="../image/key.png">
+                  <input type="password" id="password" name="password" required>
+                  <input type="submit" value="Entrar">
+              </form>
+            </div>
+            </div>
+          </div>
+          <div id="id7x" class="grid-column"></div>
+           </div>
+      </div>
+    </div>
+
+    <div id="irz7b" class="grid-row">
+      <div id="iycz3" class="grid-column">
+        <h1 id="irjua" class="header1">
+          Depoimentos
+        </h1>
         
-        </h1> </header>
-       
         <form action=" lista"></form>
         <div id="container">
             <br>
             <p>Utilize este espaço caso queira deixar uma mensagem de conforto para as pessoas que estão passando por problemas psicológicos. Esta mensagem poderá ser selecionada para aparecer na página inicial.</p>
             <br>
+            <input type="text" class ="Input" placeholder="Digite seu comentário" />
+            <br>
+            <input type="checkbox" name="" id="checkbox">
+            
             <label for="checkbox" required>Concordo que as minha mensagem seja exibida nesta página</label>
-        <input type="checkbox" name="" id="checkbox">
-            <input type="text" id="taskInput" placeholder="Digite seu comentário" />
-            <button onclick="addTask()" id="Click1">Adicionar</button>
-            <ul id="taskList"></ul>
-            <button onclick="enviarMensagem()" id="Click1">Enviar comentário</button>
+      
+        <br>
+           
+         <button onclick="enviarMensagem()" id="Click1">Enviar comentário</button>
             
         </div>
     </form>
         
-    </div> 
-    <script src="/js/depoimento.js"></script>
-    
-    <footer class="copyright">
-        <p>Copyright Mentaltech  © 2024 | Todos os direitos reservados</p>
-        </footer>
-    </html>
+  
+      </div>
+    </div>
+
+
+   
+
+        <div id="copy1" class="text-blue">Copyright © 2024 Mentaltech</div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/scripts.js"></script>
+  <script src="../js/depoimento.js"></script>
+</html>
