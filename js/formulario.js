@@ -1,24 +1,23 @@
 document.addEventListener("DOMContentLoaded", function(){
   const formulario = document.getElementById("cadastro-form");
   formulario.addEventListener("submit", function (event){
-    event.preventDefault(); // Prevent form submission initially
+    event.preventDefault(); 
     resetErrorMessages();
     
     if (!validateAge()) {
       alert("Você deve ter pelo menos 18 anos.");
-      return; // Stop further validation if age is not valid
+      return; 
     }
 
     if (!validateRequiredFields()) {
-      return; // Stop further validation if required fields are not filled
+      return; ed
     }
 
     if (!comparePasswords()) {
       alert("As senhas não coincidem.");
-      return; // Stop further validation if passwords don't match
+      return; 
     }
 
-    // If all validations pass, submit the form
     this.submit();
   });
 
