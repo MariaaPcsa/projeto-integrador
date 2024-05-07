@@ -214,18 +214,18 @@ transition: 1s;
 }
 
 
-.quem-somos p {
-	text-align: left;
-	font-size: 16px;
-  }
-  
-  .equipe {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 20px;
-	margin-top: 20px;
-  }
-  
+.quem-somos{
+  text-align: justify;
+}
+.equipe {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center; 
+  align-items: center; 
+}
+
   .membro img {
 	width: 80px;
 	height: 80px;
