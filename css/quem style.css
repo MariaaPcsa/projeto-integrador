@@ -8,6 +8,7 @@ body {
     text-align: center;
     width: 100vw;
     min-height: 100dvh;
+    max-width: 600px
   }
   
   header {

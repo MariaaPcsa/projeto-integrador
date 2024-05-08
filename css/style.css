@@ -1,4 +1,60 @@
 /* style.css */
+
+* {
+  
+/* Consulta de mídia para dispositivos móveis */
+@media (max-width: 600px) {
+  header {
+    text-align: center; /* Centraliza o texto do cabeçalho */
+  }
+
+  #alertaLogin {
+    text-align: center; /* Centraliza o texto do alerta */
+  }
+  .slider{
+    text-align: left;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: small;
+   
+  
+  }
+  
+
+  #saudacao {
+    flex-direction: column; /* Coloca os elementos em coluna */
+  }
+
+  .equipe {
+    grid-template-columns: repeat(2, 1fr); /* Reduz para duas colunas */
+  }
+}
+
+/* Consulta de mídia para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  header {
+    text-align: left; /* Alinhamento do cabeçalho */
+  }
+
+  #alertaLogin {
+    text-align: left; /* Alinhamento do alerta */
+    display: inline-block;
+  }
+}
+
+/* Consulta de mídia para desktops */
+@media (min-width: 1920px) {
+  header {
+    text-align: left; /* Alinhamento do cabeçalho */
+  }
+
+  #alertaLogin {
+    text-align: left; /* Alinhamento do alerta */
+  }
+  
+}
+
+}
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f4f4f4;
@@ -9,13 +65,14 @@ body {
   text-align: center;
   width: 100vw;
   min-height: 100dvh;
+  
 }
 
 header {
   background-color: #005f73;
   color:#fff; 
   padding: 5px 10px;
-
+  
 
 }
 
@@ -32,7 +89,7 @@ header {
 
 a.botao1{
   margin: 10px;
-  font-family: 200px;
+  font-family: 100px;
   margin-bottom: 10px;
   font-size: small;
   color:#fff; 
@@ -56,7 +113,9 @@ a.botao1{
  
   }
 main {
-  padding: 20px;
+  padding: 10px;
+  
+  
  
 }
 
@@ -115,15 +174,27 @@ a:hover {
 
 
 .slider{
-  margin: 0 auto;
-  width: 800px;
+  margin: auto;
+  width: 300px;
   height: 400px;
   overflow: hidden;
-  
 }
+#carracel1{
+  width: 230px;
+  height: 240px;
+}
+#carracel{
+  
+  width: 380px; /* Define a largura da imagem como 300 pixels */
+    height: 225px; /* Define a altura da imagem como 200 pixels */
+}
+#carracel3{
+  width: 230px;
+  height: 240px;
 
+}
 .slides{
-  width: 400%;
+  width: 500%;
   height: 400px;
   display: flex;
 
@@ -140,12 +211,12 @@ a:hover {
 }
 
 .slide img{
-  width: 800px;
+  width: 380px;
 }
 
 .manual-navigation{
   position: absolute;
-  width: 800px;
+  width: 380px;
   margin-top: -40px;
   display: flex;
   justify-content: center;
@@ -184,21 +255,21 @@ a:hover {
 .navigation-auto div{
   border: 2px solid white;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
 cursor: pointer;
-transition: 1s;
+transition: 20s;
 }
 
 .navigation-auto{
   position: absolute;
-  width: 800px;
-  margin-top: 360px;
+  width: 600px;
+  margin-top: 380px;
   display: flex;
   justify-content: center; 
 }
 
 .navigation-auto div:not(:last-child){
-  margin-right: 40px;
+  margin-right: 10px;
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
