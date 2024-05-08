@@ -216,9 +216,8 @@ transition: 1s;
 }
 
 
-.quem-somos{
-  text-align: justify;
-}
+
+
 .equipe {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -239,3 +238,34 @@ transition: 1s;
 	font-size: 14px;
   }
   
+  .fotosTranstornos {
+    float: left; /* Faz com que as imagens fiquem à esquerda */
+    width: 40%; /* Define a largura da imagem */
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+    height: auto; /* Altura automática para manter a proporção */
+    width: 210px;
+  }
+
+  .imagemTextoItem {
+    clear: both; /* Limpa flutuações anteriores */
+    margin-bottom: 25px; /* Espaçamento entre as imagens */
+    overflow: hidden; /* Limpa a flutuação do conteúdo */
+    
+  }
+
+  .imagemTextoItem p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+    margin-bottom: 50px;
+    text-align: justify;
+    margin-right: 30%;
+    font-size: 18px;
+  }
+
+  .textos {
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 70px;
+    margin-right: 10%;
+
+  }
+
