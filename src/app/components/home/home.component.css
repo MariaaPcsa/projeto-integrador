@@ -1,0 +1,122 @@
+.carousel {
+    width: 100%;
+    max-width: 700px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+    z-index: 2; /* Define uma posição de empilhamento menor para o carrossel */
+}
+
+.slides {
+    display: flex;
+    transition: transform 3s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.message-text {
+    font-size: 30px; /* Altere o tamanho da fonte conforme desejado */
+}
+
+.carousel-button {
+    border: 2px solid transparent;
+    width: 10px; /* Reduz o tamanho do botão */
+    height: 10px; /* Reduz o tamanho do botão */
+    border-radius: 50%; /* Torna o botão redondo */
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7); /* Define a cor de fundo com transparência */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Adiciona transição para a cor de fundo e borda */
+    display: inline-block; /* Exibe o botão como um bloco */
+    margin-right: 5px; /* Adiciona espaçamento entre os botões */
+}
+
+/* Regra de mídia para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    .carousel {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .carousel-button {
+        width: 8px; /* Reduz ainda mais o tamanho do botão */
+        height: 8px; /* Reduz ainda mais o tamanho do botão */
+        margin-right: 3px; /* Reduz o espaçamento entre os botões */
+    }
+}
+
+.carousel-button.active {
+    background-color: white; /* Ajusta a cor de fundo apenas para o botão ativo */
+    border-color: white; /* Ajusta a cor da borda apenas para o botão ativo */
+}
+
+.buttons-container {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0; /* Alterado para 0 para centralizar os botões horizontalmente */
+    margin: 0 auto; /* Centraliza horizontalmente os botões */
+    text-align: center; /* Centraliza os botões horizontalmente */
+}
+
+.additional-content {
+    margin-top: 30px; /* Adiciona margem superior */
+    padding: 0 20px; /* Adiciona preenchimento nas laterais para espaçamento */
+    max-width: 700px; /* Limita a largura do conteúdo adicional */
+    margin: 0 auto; /* Centraliza horizontalmente o conteúdo adicional */
+}
+
+.additional-content h2 {
+    margin-top: 20px; /* Adiciona espaço entre os títulos e o conteúdo */
+}
+
+.additional-content p {
+    margin-bottom: 20px; /* Adiciona espaço entre os parágrafos */
+}
+
+.additional-content a {
+    display: block; /* Transforma os links em blocos para melhorar a usabilidade */
+    margin-top: 15px; /* Adiciona espaço entre os links */
+}
+
+.imagemTextoItem {
+    width: 100%; /* Define a largura total para cada "andar" */
+    display: flex; /* Para alinhar a imagem e o texto lado a lado */
+    margin-bottom: 20px; /* Adiciona espaço entre os "andares" */
+}
+
+.imagemTextoItem img {
+    width: 50%; /* Define a largura da imagem para ocupar metade da largura do "andar" */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.imagemTextoItem .texto {
+    width: 50%; /* Define a largura do texto para ocupar a outra metade do "andar" */
+    margin-left: 20px; /* Adiciona espaço entre a imagem e o texto */
+}
+
+/* Ajustes para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .imagemTextoItem {
+        flex-direction: column; /* Altera o layout para empilhar os itens verticalmente */
+    }
+
+    .imagemTextoItem img,
+    .imagemTextoItem .texto {
+        width: 80%; /* Reduz o tamanho das imagens em dispositivos móveis */
+        margin-left: 0; /* Remove o espaço entre a imagem e o texto */
+    }
+
+    .imagemTextoItem .texto {
+        margin-top: 10px; /* Adiciona um pequeno espaço entre a imagem e o texto */
+        font-size: 150%; /* Aumenta o tamanho do texto em 20% */
+    }
+}
+
+
+
+
+
