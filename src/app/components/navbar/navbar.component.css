@@ -1,0 +1,86 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #005f73;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 45px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links {
+    flex-grow: 1; /* Ocupa todo o espaço restante */
+}
+
+.menu-toggle {
+    display: none;
+    margin-left: auto; /* Mover o ícone para o final da barra de navegação */
+}
+
+/* Estilos para telas menores que 768px (celulares) */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* ajuste conforme necessário */
+        left: 0;
+        background-color: #005f73;
+        width: 100%;
+        padding: 10px 0;
+        box-sizing: border-box;
+        border: 5px solid #fff;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .menu-toggle i {
+        font-size: 24px;
+    }
+
+    .nav-links.active {
+        display: flex; /* Exibe o menu quando a classe .active está presente */
+        flex-direction: column;
+        background-color: #005f73;
+        padding: 10px 0;
+        box-sizing: border-box;
+        z-index: 4;
+    }
+
+    .navbar {
+        z-index: 3; /* Define uma posição de empilhamento maior para o menu de hambúrguer */
+    }
+}

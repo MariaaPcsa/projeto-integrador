@@ -1,0 +1,113 @@
+
+
+<div class="additional-content">
+    <h2>Finalidade do Projeto</h2>
+    <div class="textos">
+        <p>Este ambiente foi desenvolvido com a finalidade de 
+            prestar apoio emocional a pessoas que estão enfrentando
+             desafios relacionados à saúde mental, auxiliando assim, 
+             o retorno às atividades no mercado de trabalho e sociais
+              pós-pandemia, além de proporcionar um ambiente acolhedor.</p>
+    </div>
+
+    <div class="carousel">
+        <h3>Algumas mensagens dos nossos usuarios</h3>
+        <!-- Container dos slides -->
+        <div class="slides" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+          <!-- Itera sobre as imagens e exibe cada uma como um slide -->
+          <img *ngFor="let image of images" [src]="image" class="slide">
+        </div>
+        
+        <!-- Container dos botões de navegação -->
+        <div class="buttons-container">
+          <!-- Itera sobre as imagens para criar um botão para cada uma -->
+          <span *ngFor="let image of images; let i = index"
+                (click)="goToSlide(i)"
+                class="carousel-button"
+                [class.active]="i === currentIndex"></span>
+        </div>
+    </div>
+
+    <hr> <!-- Linha divisória para separar seções -->
+    
+    <div class="message-container">
+        <h2>Aqui você pode ver mensagens deixadas pelos nossos usuários:</h2>
+        <div class="message" *ngIf="currentMessage !== null">
+            <p class="message-text">Mensagem: {{ currentMessage }}</p>
+            <p class="message-text">Autor: {{ typingName }}</p>
+        </div>
+        <div *ngIf="currentMessage === null">
+            <p class="message-text">Mensagem:</p>
+            <p class="message-text">Autor:</p>
+        </div>
+    </div>
+
+    <hr> <!-- Linha divisória para separar seções -->
+
+    <h2>Entenda como funciona a reorganização da mente</h2>
+    <div class="video-container">
+        <video width="100%" height="auto" controls>
+            <source src="assets/videos/video1.mp4" type="video/mp4">
+            <source src="assets/videos/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Créditos: A REORGANIZAÇÃO DA NOSSA MENTE | ANSIEDADE BRASIL (Dr. Isaac Efraim, Médico Psiquiatra e Terapeuta)</p>
+    </div>
+
+    <hr> <!-- Linha divisória para separar seções -->
+
+    <h2>Saiba mais</h2>
+    <div class="textos">
+        <p>De acordo com a Organização Mundial da Saúde (OMS) e a Organização Internacional do Trabalho (OIT), cerca de 15% dos trabalhadores vivem com um transtorno mental. O ambiente de trabalho é um dos responsáveis pelo desencadeamento ou agravamento de doenças mentais como ansiedade, síndrome do pânico, burnout e depressão.</p>
+        <p>Estes transtornos foram um dos que mais afastam trabalhadores de suas atividades laborais. Conforme apontou o Observatório de Segurança e Saúde do Trabalho no ano de 2021, cerca de 13 mil brasileiros tiveram a concessão de benefícios em que a causa foi por transtornos mentais e comportamentais.</p>
+    </div>
+
+    <!-- Imagens e textos sobre os transtornos -->
+    <div class="imagemTextoContainer">
+        <!-- Transtorno de Ansiedade -->
+        <div class="imagemTextoItem">
+            <img src="assets/images/imgAns.png" alt="Transtorno de Ansiedade">
+            <div class="texto">
+                <p>Os transtornos de ansiedade são doenças psiquiátricas que possuem algumas características como preocupação excessiva e medo constante de que algo ruim vai acontecer. O tratamento, em alguns casos, pode envolver o uso de medicamentos prescritos por um profissional da área da saúde, além de psicoterapia.</p>
+            </div>
+        </div>
+
+        <!-- Síndrome do Pânico -->
+        <div class="imagemTextoItem">
+            <img src="assets/images/imgPan.png" alt="Síndrome do Pânico">
+            <div class="texto">
+                <p>A síndrome do pânico é uma condição caracterizada pela ocorrência de episódios de grande mal-estar e medo (ataques de pânico) que normalmente são desencadeados de maneira abrupta e que aumentam de intensidade rapidamente. O tratamento é feito através de medicamentos, atividades físicas e psicoterapia.</p>
+            </div>
+        </div>
+
+        <!-- Depressão -->
+        <div class="imagemTextoItem">
+            <img src="assets/images/imgDep.png" alt="Depressão">
+            <div class="texto">
+                <p>A depressão é uma doença mental comum que afeta o humor, pensamentos e corpo de uma pessoa. O tratamento inclui o uso de medicamentos antidepressivos e psicoterapia. As síndromes depressivas são condições incapacitantes que afetam muitas pessoas, especialmente no ambiente de trabalho.</p>
+            </div>
+        </div>
+
+        <!-- Síndrome de Burnout -->
+        <div class="imagemTextoItem">
+            <img src="assets/images/imgBurn.png" alt="Síndrome de Burnout">
+            <div class="texto">
+                <p>A síndrome de burnout é um distúrbio emocional relacionado à extrema exaustão e estresse decorrentes de situações de trabalho desgastantes. Geralmente surge em ambientes profissionais de extrema pressão e competitividade. O tratamento envolve terapia cognitivo-comportamental e aconselhamento psicológico.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr> <!-- Linha divisória para separar seções -->
+
+    <h2>Músicas para relaxar</h2>
+    <div class="textos">
+        <p>Aqui você encontrará links de algumas músicas que podem ajudar a relaxar.</p>
+    </div>
+
+    <div class="music-links">
+        <a target="_blank" href="https://www.youtube.com/watch?v=tDHOoq4bxvQ">Clique aqui para ouvir no YouTube (música Marconi union—weightless)</a>
+        <a target="_blank" href="https://www.youtube.com/watch?v=wsNc35fkkdw">Clique aqui para ouvir no YouTube (música Ondas Binaural)</a>
+        <a target="_blank" href="https://www.youtube.com/watch?v=PV4rJkTngBo">Clique aqui para ouvir no YouTube (música Lofi)</a>
+    </div>
+</div>
+
