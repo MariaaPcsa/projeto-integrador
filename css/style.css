@@ -1,0 +1,271 @@
+/* style.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100vw;
+  min-height: 100dvh;
+}
+
+header {
+  background-color: #005f73;
+  color:#fff; 
+  padding: 5px 10px;
+
+
+}
+
+#alertaLogin{
+  text-align: left;
+  display: inline-block;
+  margin: 10px;
+  font-family: 8%;
+  margin-bottom: 10px;
+  font-size: small;
+  color:#fff; 
+
+}
+
+a.botao1{
+  margin: 10px;
+  font-family: 200px;
+  margin-bottom: 10px;
+  font-size: small;
+  color:#fff; 
+
+ 
+}
+
+#boneco-branco{
+  width: 35px;
+  border-radius: 50%;
+}
+
+
+#saudacao{
+   color:#fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+
+ 
+  }
+main {
+  padding: 20px;
+ 
+}
+
+h1, h2, h3 {
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+#nome-pagina{
+  text-align: right;
+  color: white;
+}
+h1{
+  align-items: center;
+}
+p, ul, li, input, select, button {
+  font-size: 16px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none; /* Remove sublinhado */
+}
+
+a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button-link:hover {
+  background-color: #0056b3;
+}
+
+
+
+.copyright{
+
+  color: white;
+  background-color:#005f73;
+  padding: 8px;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: auto;
+  padding: 10px;
+  margin-top:auto ;
+ 
+}
+
+
+.slider{
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  
+}
+
+.slides{
+  width: 400%;
+  height: 400px;
+  display: flex;
+
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+}
+
+.manual-navigation{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #005f73;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+.manual-btn.manual-btn:hover{
+  background-color: white;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+
+.navigation-auto div{
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+cursor: pointer;
+transition: 1s;
+}
+
+.navigation-auto{
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center; 
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn1{
+  background-color: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn1{
+  background-color: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn1{
+  background-color:white;
+}
+
+
+
+
+.equipe {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center; 
+  align-items: center; 
+}
+
+  .membro img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+  }
+  
+  .membro p {
+	margin-top: 10px;
+	font-size: 14px;
+  }
+  
+  .fotosTranstornos {
+    float: left; /* Faz com que as imagens fiquem à esquerda */
+    width: 40%; /* Define a largura da imagem */
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+    height: auto; /* Altura automática para manter a proporção */
+    width: 210px;
+  }
+
+  .imagemTextoItem {
+    clear: both; /* Limpa flutuações anteriores */
+    margin-bottom: 25px; /* Espaçamento entre as imagens */
+    overflow: hidden; /* Limpa a flutuação do conteúdo */
+    
+  }
+
+  .imagemTextoItem p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+    margin-bottom: 50px;
+    text-align: justify;
+    margin-right: 30%;
+    font-size: 18px;
+  }
+
+  .textos {
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 70px;
+    margin-right: 10%;
+
+  }
+
