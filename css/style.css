@@ -306,15 +306,23 @@ transition: 1s;
   }
 
 /* Estilos para dispositivos com largura até 400px e altura até 750px */
-@media only screen and (max-width: 400px) and (max-height: 750px) {
+@media only screen and (max-width: 375px) and (max-height: 750px) {
   body {
     font-size: 14px; 
     line-height: 1.4; 
     padding: 5px;
   }
+  #saudacao{
+    padding: 300%;
+    display: flex;
+    position: relative;
+      flex-flow: column wrap;
+ 
+   justify-content: flex-start
+  }
 
   header {
-    padding: 10px; 
+    padding: 300px; 
    
   }
 
@@ -415,6 +423,7 @@ transition: 1s;
     line-height: 1.0; 
     padding: 5px; 
     margin: 0;
+    text-decoration-line: line-through;
   }
 
   #alertaLogin {
@@ -426,9 +435,13 @@ transition: 1s;
     width: 180px;
   }
 
-  a.botao1 {
+  .botao1 {
     font-size: 5px; 
-    margin: 2px; 
+    margin: 2px;
+   
+
+
+  
   }
 
   #boneco-branco {
@@ -722,3 +735,4 @@ transition: 1s;
       text-align: center; 
     }
   }
+  
