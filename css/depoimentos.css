@@ -8,10 +8,11 @@ body {
   
   #container {
     max-width: 600px;
-    margin: 100px auto;
-    padding: 30px;
+    margin: 150px auto;
+    padding: 100px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    display: inline-block;
   }
   
   ul {
@@ -33,3 +34,4 @@ body {
     padding: 20px;
   
     vertical-align: middle;}
+    
