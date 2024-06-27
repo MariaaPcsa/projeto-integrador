@@ -1,24 +1,32 @@
+
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-    color: #333;
-    min-height: 100dvh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 100dvh;
 }
 
 header {
-    background-color: #005f73;
-    color:#fff; 
-    padding: 5px 10px;
-    text-align: left;
-  }
+  background-color: #005f73;
+  color:#fff; 
+  padding: 5px 10px;
+  text-align: left;
+  
+}
+    
+  
   a.botao1{
     margin: 10px;
     font-family: 200px;
     margin-bottom: 10px;
     font-size: small;
     color:#fff; 
+   justify-content: center;
   
    
     
@@ -50,18 +58,18 @@ header {
   }
   
   a {
-    color: #007BFF;
-    text-decoration: none; /* Remove sublinhado */
+    color: #5491B0;
+    text-decoration: none; 
   }
   
   a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration: underline; 
   }
   .button-link {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px 0;
-    background-color: #007BFF;
+    background-color: #5491B0;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -70,7 +78,7 @@ header {
   }
   
   .button-link:hover {
-    background-color: #0056b3;
+    background-color: #5491B0;
   }
 
 /* Título da página */
@@ -118,7 +126,7 @@ select {
 
 /* Botão de envio */
 input[type="submit"] {
-    background-color: #5cb85c;
+    background-color: #5491B0;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -132,7 +140,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #4cae4c;
+    background-color: #5491B0;
 }
 
 /* Estilo para o contêiner adicional de comentários */
@@ -146,6 +154,17 @@ input[type="submit"]:hover {
 input[type="checkbox"] {
     margin-right: 5px;
 }
+#cadastro-form{
+  padding: 30px;
+}
+.form-grupo{
+  gap: 12px;
+  flex: 1;
+  
+
+  
+ 
+}
 
 /* Ajustes para a acessibilidade dos elementos */
 input[type="checkbox"]:focus,
@@ -155,16 +174,21 @@ input[type="password"]:focus,
 input[type="date"]:focus,
 input[type="endereco"]:focus,
 select:focus {
-    border-color: #4cae4c;
+    border-color: #e3e8e3;
 }
 #container {
     max-width: 600px;
-    margin: 20px auto;
+    margin: 80px auto 150px;
     padding: 30px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    font-family:'Arial Narrow Bold', sans-serif 18px;
   }
-  
+  svg{
+    width: 15px;
+    image-rendering: left;
+
+  }
   ul {
     list-style: none;
     padding: 0;
@@ -174,7 +198,7 @@ select:focus {
     margin: 20px auto;
     margin-top: 10px;
     padding: 8px 12px;
-    background-color: #4cae4c;
+    background-color: #5491B0;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -251,7 +275,7 @@ p, ul, li, input, select, button {
 }
 
 a {
-  color: #007BFF;
+  color: #5491B0;
   text-decoration: none; /* Remove sublinhado */
 }
 
@@ -262,7 +286,7 @@ a:hover {
   display: inline-block;
   padding: 10px 20px;
   margin: 10px 0;
-  background-color: #007BFF;
+  background-color: #5491B0;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -271,7 +295,7 @@ a:hover {
 }
 
 .button-link:hover {
-  background-color: #0056b3;
+  background-color: #5491B0;
 }
 
 .copyright{

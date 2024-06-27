@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+ 
+  
+  #container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 20px 20;
+    background-color: #5491B0;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  #logo{
+    width: 200px;
+    padding: 20px;
+  
+    vertical-align: middle;}

@@ -1,4 +1,4 @@
-/* style.css */
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #f4f4f4;
@@ -9,12 +9,17 @@ body {
   text-align: center;
   width: 100vw;
   min-height: 100dvh;
+  
 }
 
 header {
+ margin-top:0, auto;
   background-color: #005f73;
   color:#fff; 
-  padding: 5px 10px;
+  position: fixed;
+  width: 100%;
+    height: 7rem;
+    z-index: 1;
 
 
 }
@@ -31,18 +36,23 @@ header {
 }
 
 a.botao1{
-  margin: 10px;
+  margin: 20px;
   font-family: 200px;
   margin-bottom: 10px;
   font-size: small;
   color:#fff; 
+  font-weight: bold;
 
  
 }
 
 #boneco-branco{
-  width: 35px;
+  width: 25px;
+  margin:0;
+  padding: 8px;
   border-radius: 50%;
+  height:40px;
+  
 }
 
 
@@ -50,8 +60,8 @@ a.botao1{
    color:#fff;
    display: flex;
    align-items: center;
-   justify-content: center;
-   
+   text-align: left;
+   font-family: Arial, sans-serif
 
  
   }
@@ -59,29 +69,40 @@ main {
   padding: 20px;
  
 }
-
+#p{
+  margin: 5px 30px;
+  width: auto;
+}
 h1, h2, h3 {
   color: #333;
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  
 }
 #nome-pagina{
   text-align: right;
   color: white;
 }
 h1{
-  align-items: center;
+  font-family: 100px "Greze",serif;
+  font-weight: 400;
+  font-size: 2rem;
 }
 p, ul, li, input, select, button {
   font-size: 16px;
+  
 }
-
+p{
+  display: flex;
+  justify-content: center; 
+}
 a {
   color: #007BFF;
-  text-decoration: none; /* Remove sublinhado */
+  text-decoration: none; 
 }
 
 a:hover {
-  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  text-decoration: underline; 
 }
 .button-link {
   display: inline-block;
@@ -102,7 +123,7 @@ a:hover {
 
 
 .copyright{
-
+ 
   color: white;
   background-color:#005f73;
   padding: 8px;
@@ -111,6 +132,8 @@ a:hover {
   margin-top: auto;
   padding: 10px;
   margin-top:auto ;
+  
+  
  
 }
 
@@ -239,10 +262,10 @@ transition: 1s;
   }
   
   .fotosTranstornos {
-    float: left; /* Faz com que as imagens fiquem à esquerda */
-    width: 40%; /* Define a largura da imagem */
-    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
-    height: auto; /* Altura automática para manter a proporção */
+    float: left; 
+    width: 40%; 
+    margin-right: 20px; 
+    height: auto; 
     width: 210px;
   }
 
@@ -262,10 +285,437 @@ transition: 1s;
   }
 
   .textos {
+  
     text-align: justify;
-    font-size: 18px;
-    margin-bottom: 70px;
+    height: auto, auto;
+    font-size: 16px;
+    margin-bottom: 50px;
     margin-right: 10%;
+    margin: 5px 30px;
 
   }
+  #textos{
+    text-align: justify;
+    height: auto, auto;
+    font-size: 16px;
+    margin-bottom: 50px;
+    margin-right: 10%;
+  }
 
+/* Estilos para dispositivos com largura até 400px e altura até 750px */
+@media only screen and (max-width: 400px) and (max-height: 750px) {
+  body {
+    font-size: 14px; 
+    line-height: 1.4; 
+    padding: 5px;
+  }
+
+  header {
+    padding: 10px; 
+   
+  }
+
+  #alertaLogin {
+    font-size: 12px; 
+    text-align: center; 
+    
+  }
+
+  a.botao1 {
+    font-size: 12px; 
+    margin: 5px; 
+    
+  }
+
+  #boneco-branco {
+    width: 25px; 
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  h1, h2, h3 {
+    font-size: 18px; 
+  }
+
+  p, ul, li, input, select, button {
+    font-size: 14px; 
+  }
+
+  .slider {
+    width: 100%; 
+    height: auto;
+    overflow: hidden; 
+    margin: 0 auto; 
+  }
+
+  .slides {
+    width: 400%; 
+    height: auto; 
+  }
+
+  .slide {
+    width: 25%; 
+    height: auto; 
+  }
+
+  .slide img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .manual-navigation,
+  .navigation-auto {
+    width: 100%;
+    margin-top: 10px; 
+  }
+
+  .manual-navigation div:not(:last-child),
+  .navigation-auto div:not(:last-child) {
+    margin-right: 20px; 
+  }
+  .equipe {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .membro img {
+    width: 60px; 
+    height: 60px;
+  }
+
+  .fotosTranstornos {
+    width: 50%; 
+  }
+
+  .textos
+  .imagemTextoItem p {
+    margin-right: 0; 
+    text-align: left; 
+    
+  }
+}
+
+@media only screen and (max-width: 412px) and (max-height: 915px) {
+
+
+  body {
+    font-size: 20px; 
+    line-height: 1.4; 
+    padding: 5px; 
+    margin: 0;
+  }
+
+  header {
+    padding: 9%; 
+    font-size: 14px; 
+    line-height: 1.0; 
+    padding: 5px; 
+    margin: 0;
+  }
+
+  #alertaLogin {
+    font-size: 12px; 
+    text-align: center; 
+  }
+  
+  video{
+    width: 180px;
+  }
+
+  a.botao1 {
+    font-size: 5px; 
+    margin: 2px; 
+  }
+
+  #boneco-branco {
+    width: 25px; 
+  }
+
+  main {
+    padding: 10px; 
+  }
+
+  h1, h2, h3 {
+    font-size: 18px; 
+  }
+
+  p, ul, li, input, select, button {
+    font-size: 14px; 
+  }
+
+  .slider {
+    width: 100%; 
+    height: auto; 
+    overflow: hidden;
+    margin: 0 auto; }
+
+  .slides {
+    width: 400%; 
+    height: auto; }
+
+  .slide {
+    width: 25%; 
+    height: auto; }
+
+  .slide img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .manual-navigation,
+  .navigation-auto {
+    width: 100%; 
+    margin-top: 10px; 
+  }
+
+  .manual-navigation div:not(:last-child),
+  .navigation-auto div:not(:last-child) {
+    margin-right: 20px; 
+  }
+
+  .equipe {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .membro img {
+    width: 60px; 
+    height: 60px;
+  }
+
+  .fotosTranstornos {
+    width: 50%; 
+  }
+  .textos,
+  .imagemTextoItem p {
+    margin-right: 0; 
+    text-align: center; 
+    display: inline-block;
+  }
+  }
+  
+
+/* Estilos para dispositivos com largura até 853px e altura até 1280px */
+@media only screen and (max-width: 853px) and (max-height: 1280px) {
+  body {
+    font-size: 14px; 
+    line-height: 1.4; 
+    padding: 5px; 
+  }
+
+  header {
+    font-size: 12px;
+    padding: 9px; 
+  }
+  #nome-pagina{
+    font-size: 18px;
+  }
+
+  #alertaLogin {
+    font-size: 16px; 
+    text-align: center; 
+  }
+
+  video{
+    width: 400px;
+  }
+
+  a.botao1 {
+    font-size: 20px; 
+    margin: 2px; 
+  }
+
+  #boneco-branco {
+    width: 25px;
+  }
+
+  main {
+    padding: 10px; 
+  }
+
+  h1, h2, h3 {
+    font-size: 18px;
+  }
+
+  p, ul, li, input, select, button {
+    font-size: 14px; 
+  }
+
+  .slider {
+    width: 100%; 
+    height: auto; 
+    overflow: hidden; 
+    margin: 0 auto; 
+  }
+
+  .slides {
+    width: 400%;
+    height: auto; 
+  }
+
+  .slide {
+    width: 25%; 
+    height: auto; 
+  }
+  .slide img {
+    width: 100%; 
+    height: auto; 
+  }
+  .manual-navigation,
+  .navigation-auto {
+    width: 100%; 
+    margin-top: 10px; 
+  }
+
+  .manual-navigation div:not(:last-child),
+  .navigation-auto div:not(:last-child) {
+    margin-right: 20px; 
+  }
+
+  .equipe {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .membro img {
+    width: 60px; 
+    height: 60px;
+  }
+
+  .fotosTranstornos {
+    width: 50%; 
+  }
+
+  .textos,
+  .imagemTextoItem p {
+    margin-right: 0; 
+    text-align: center; 
+  }
+}
+/* Consulta de mídia para dispositivos móveis */
+@media (max-width: 600px) {
+  header {
+    text-align: center; 
+  }
+
+  #alertaLogin {
+    text-align: center; 
+  }
+
+  #saudacao {
+    flex-direction: column; 
+  }
+
+  .equipe {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+/* Consulta de mídia para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  header {
+    text-align: left; 
+  }
+
+  #alertaLogin {
+    text-align: left; 
+  }
+}
+
+/* Consulta de mídia para desktops */
+@media (min-width: 1025px) {
+  header {
+    text-align: left; 
+  }
+
+  #alertaLogin {
+    text-align: left; 
+  }
+}
+
+@media only screen and (max-width: 1200px) and (max-height: 19200px) {
+    body {
+      font-size: 14px; 
+      line-height: 1.4; 
+      padding: 5px; 
+    }
+  
+    header {
+      padding: 10px; 
+    }
+  
+    #alertaLogin {
+      font-size: 12px; 
+      text-align: center; 
+    }
+  
+    a.botao1 {
+      font-size: 12px; 
+      margin: 5px; 
+    }
+  
+    #boneco-branco {
+      width: 25px;
+    }
+  
+    main {
+      padding: 10px; 
+    }
+  
+    h1, h2, h3 {
+      font-size: 18px; 
+    }
+  
+    p, ul, li, input, select, button {
+      font-size: 14px; 
+    }
+  
+    .slider {
+      width: 100%; 
+      height: auto; 
+      overflow: hidden; 
+      margin: 0 auto; 
+    }
+  
+    .slides {
+      width: 400%; 
+      height: auto; 
+    }
+  
+    .slide {
+      width: 25%; 
+      height: auto; 
+    }
+  
+    .slide img {
+      width: 100%; 
+      height: auto; 
+    }
+    .manual-navigation,
+    .navigation-auto {
+      width: 100%; 
+      margin-top: 10px; 
+    }
+  
+    .manual-navigation div:not(:last-child),
+    .navigation-auto div:not(:last-child) {
+      margin-right: 20px; 
+    }
+    .equipe {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  
+    .membro img {
+      width: 60px; 
+      height: 60px;
+    }
+  
+    .fotosTranstornos {
+      width: 50%; 
+    }
+  
+    .textos,
+    .imagemTextoItem p {
+      margin-right: 0; 
+      text-align: center; 
+    }
+  }
